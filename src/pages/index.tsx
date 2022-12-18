@@ -5,5 +5,19 @@ const Map = dynamic(() => import('components/Map'), {
 });
 
 export default function Home() {
-  return <Map />;
+  return (
+    <Map
+      places={[
+        {
+          id: '2',
+          name: 'Toronto',
+          slug: 'Toronto',
+          location: {
+            latitude: 33,
+            longitude: -95,
+          },
+        },
+      ]}
+    />
+  );
 }
