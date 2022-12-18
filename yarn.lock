@@ -1302,7 +1302,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.18.9, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.18.9, @babel/runtime@npm:^7.19.0, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
   version: 7.20.6
   resolution: "@babel/runtime@npm:7.20.6"
   dependencies:
@@ -2015,6 +2015,31 @@ __metadata:
   dependencies:
     "@sinonjs/commons": ^1.7.0
   checksum: 7d3aef54e17c1073101cb64d953157c19d62a40e261a30923fa1ee337b049c5f29cc47b1f0c477880f42b5659848ba9ab897607ac8ea4acd5c30ddcfac57fca6
+  languageName: node
+  linkType: hard
+
+"@styled-icons/evaicons-outline@npm:^10.46.0":
+  version: 10.46.0
+  resolution: "@styled-icons/evaicons-outline@npm:10.46.0"
+  dependencies:
+    "@babel/runtime": ^7.19.0
+    "@styled-icons/styled-icon": ^10.7.0
+  peerDependencies:
+    react: "*"
+    styled-components: "*"
+  checksum: 7529e3af4f6c897e13cdeb589fc99069f4968db7f94885469db65b1aafdc3f4847a8924dac7e49ef6503e36c9193e33cb2c81b1a17c489d5752af6c241dc559f
+  languageName: node
+  linkType: hard
+
+"@styled-icons/styled-icon@npm:^10.7.0":
+  version: 10.7.0
+  resolution: "@styled-icons/styled-icon@npm:10.7.0"
+  dependencies:
+    "@babel/runtime": ^7.19.0
+  peerDependencies:
+    react: "*"
+    styled-components: ">=4.1.0 <6"
+  checksum: 3a3fe56240e5d4059bf4e740de3be10234f3fc5fd70249c387774623485823c8ba2cda2ef0280aa8417310ddec4a9e49dddd1642e4ee7502aacfa34c163754a2
   languageName: node
   linkType: hard
 
@@ -3375,6 +3400,7 @@ __metadata:
   resolution: "boilerplate@workspace:."
   dependencies:
     "@babel/preset-typescript": ^7.18.6
+    "@styled-icons/evaicons-outline": ^10.46.0
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.4.0
     "@types/jest": ^29.2.4
