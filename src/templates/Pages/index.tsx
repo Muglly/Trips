@@ -3,7 +3,7 @@ import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline';
 
 import * as S from './styles';
 
-export default function AboutTemplate() {
+export default function PagesTemplate() {
   return (
     <S.Content>
       <LinkWrapper href="/">
