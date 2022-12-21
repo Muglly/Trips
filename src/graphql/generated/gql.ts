@@ -15,7 +15,8 @@ import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/
 const documents = {
     "\n  query getPages($first: Int) {\n    pages(first: $first) {\n      id\n      heading\n      slug\n      body {\n        html\n      }\n    }\n  }\n": types.GetPagesDocument,
     "\n  query getPageBySlug($slug: String!) {\n    page(where: { slug: $slug }) {\n      id\n      heading\n      slug\n      body {\n        html\n      }\n    }\n  }\n": types.GetPageBySlugDocument,
-    "\n  query getPlaces {\n    places {\n      id\n      slug\n      name\n      description {\n        html\n      }\n      location {\n        latitude\n        longitude\n      }\n      gallery {\n        url\n        height\n        width\n      }\n    }\n  }\n": types.GetPlacesDocument,
+    "\n  query getPlaces($first: Int) {\n    places(first: $first) {\n      id\n      slug\n      name\n      description {\n        html\n      }\n      location {\n        latitude\n        longitude\n      }\n      gallery {\n        url\n        height\n        width\n      }\n    }\n  }\n": types.GetPlacesDocument,
+    "\n  query getPlaceBySlog($slug: String!) {\n    place(where: { slug: $slug }) {\n      id\n      slug\n      name\n      description {\n        html\n      }\n      location {\n        latitude\n        longitude\n      }\n      gallery {\n        url\n        height\n        width\n      }\n    }\n  }\n": types.GetPlaceBySlogDocument,
 };
 
 /**
@@ -29,7 +30,11 @@ export function graphql(source: "\n  query getPageBySlug($slug: String!) {\n    
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function graphql(source: "\n  query getPlaces {\n    places {\n      id\n      slug\n      name\n      description {\n        html\n      }\n      location {\n        latitude\n        longitude\n      }\n      gallery {\n        url\n        height\n        width\n      }\n    }\n  }\n"): (typeof documents)["\n  query getPlaces {\n    places {\n      id\n      slug\n      name\n      description {\n        html\n      }\n      location {\n        latitude\n        longitude\n      }\n      gallery {\n        url\n        height\n        width\n      }\n    }\n  }\n"];
+export function graphql(source: "\n  query getPlaces($first: Int) {\n    places(first: $first) {\n      id\n      slug\n      name\n      description {\n        html\n      }\n      location {\n        latitude\n        longitude\n      }\n      gallery {\n        url\n        height\n        width\n      }\n    }\n  }\n"): (typeof documents)["\n  query getPlaces($first: Int) {\n    places(first: $first) {\n      id\n      slug\n      name\n      description {\n        html\n      }\n      location {\n        latitude\n        longitude\n      }\n      gallery {\n        url\n        height\n        width\n      }\n    }\n  }\n"];
+/**
+ * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
+ */
+export function graphql(source: "\n  query getPlaceBySlog($slug: String!) {\n    place(where: { slug: $slug }) {\n      id\n      slug\n      name\n      description {\n        html\n      }\n      location {\n        latitude\n        longitude\n      }\n      gallery {\n        url\n        height\n        width\n      }\n    }\n  }\n"): (typeof documents)["\n  query getPlaceBySlog($slug: String!) {\n    place(where: { slug: $slug }) {\n      id\n      slug\n      name\n      description {\n        html\n      }\n      location {\n        latitude\n        longitude\n      }\n      gallery {\n        url\n        height\n        width\n      }\n    }\n  }\n"];
 
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
