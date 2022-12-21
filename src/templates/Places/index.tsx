@@ -23,7 +23,10 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
       <div dangerouslySetInnerHTML={{ __html: place.description.html }} />
 
       {place.gallery.map((image, index) => {
-        <img key={`photo-${index}`} src={image.url} alt={place.name} />;
+        <div>
+          <h1>Eu estou aqui</h1>
+          <img key={`photo-${index}`} src={image.url} alt={place.name} />;
+        </div>;
       })}
     </>
   );
