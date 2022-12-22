@@ -48,11 +48,11 @@ export const Gallery = styled.div`
   }
 `;
 
-export const Caption = styled.p`
-  font-size: var(--small);
-  color: var(--grey);
-  margin-bottom: var(--medium);
-  a {
-    font-size: var(--small);
-  }
-`;
+// export const Caption = styled.p`
+//   font-size: var(--small);
+//   color: var(--grey);
+//   margin-bottom: var(--medium);
+//   a {
+//     font-size: var(--small);
+//   }
+// `;
