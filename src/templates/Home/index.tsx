@@ -17,13 +17,13 @@ export default function HomeTemplate({ places }: MapProps) {
         title="My Trips"
         description="A project to show my trips and show more informations and photos when clicked."
         openGraph={{
-          url: 'https://my-trips.rpsouza.com.br',
+          url: 'https://my-trips-lemon.vercel.app/',
           title: 'My Trips',
           description:
             'A project to show my trips and show more informations and photos when clicked.',
           images: [
             {
-              url: 'https://my-trips.willianjusten.com.br/img/cover.png',
+              url: 'https://my-trips-lemon.vercel.app/img/cover.png',
               width: 1280,
               height: 720,
               alt: 'My Trips',

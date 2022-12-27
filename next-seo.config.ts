@@ -2,7 +2,7 @@ export default {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://my-trips.rpsouza.com.br',
+    url: 'https://my-trips-lemon.vercel.app/',
     siteName: 'My Trips',
   },
   twitter: {
