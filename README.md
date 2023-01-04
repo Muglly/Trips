@@ -26,7 +26,7 @@ Dentro dessa aplicação é possível:
 
 ```bash
 # Clone este repositório
-git clone https://github.com/Muglly/Boilerplate
+git clone https://github.com/Muglly/Trips
 ```
 
 ## 🎲 Rodando a Aplicação
